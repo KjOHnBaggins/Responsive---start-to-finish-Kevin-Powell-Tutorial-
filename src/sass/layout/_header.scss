@@ -1,0 +1,23 @@
+.main-header {
+    position: absolute;
+    top: 1em;
+    left: 0;
+    right: 0;
+    
+}
+
+.logo {
+    width: 25%;
+    min-width: 8rem;
+    max-width: 15rem;
+    border: 5px solid black;
+    
+    img {
+        width: 100%;
+    }
+}
+
+.main-nav {
+    display: none;    
+}
+

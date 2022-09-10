@@ -1,0 +1,19 @@
+@use '../abstract/index.scss' as *;
+
+.hero {
+    background-image: linear-gradient(to right, $main, $secondary);
+    color: $text-inverse;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    text-align: center;
+
+    img {
+        display: none;
+    }
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

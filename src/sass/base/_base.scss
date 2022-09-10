@@ -1,0 +1,9 @@
+*, *::before, *::after {
+    box-lines: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}

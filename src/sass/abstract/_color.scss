@@ -1,0 +1,12 @@
+$main: hsl(190, 90%, 40%);
+$secondary: hsl(158, 82%, 47%);
+$accent: hsl(334, 80%, 46%);
+
+$white: hsl(0, 0%, 100%);
+
+//Text colors
+
+$text-main: $secondary;
+$text-inverse: $white;
+$text-accent: $accent;
+$text-secondary: $main;
