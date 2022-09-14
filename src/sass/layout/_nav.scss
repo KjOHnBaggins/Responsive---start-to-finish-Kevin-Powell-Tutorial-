@@ -1,0 +1,118 @@
+@use '../abstract/index.scss' as *;
+
+.main-nav {
+    background-color: $accent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 100%;
+    font-size: 1.2rem;
+    overflow: hidden;
+    transition: all ease-in-out 250ms;
+
+    @media(min-width: 725px) {
+        position: relative;
+        flex: auto;
+        background-color: initial;
+        margin-top: 1em;
+        margin-left: 2em;  
+        left: 0; 
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        height: 100vh;
+    
+        @media(min-width: 725px) {
+            flex-direction: row;
+            height: auto;
+        }
+
+        li {
+            flex: 1 1 auto;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.174);
+            display: flex;
+
+            @media(min-width: 725px) {
+                display: inline-block;
+                text-align: right;
+                border: none;
+            }
+
+            a {
+                color: $text-inverse;
+                text-decoration: none;
+                flex-basis: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                @media(min-width: 725px) {
+                    display: inline;
+                    justify-content: flex-end;
+                    flex-basis: auto;
+                }
+
+                &:hover,&:focus {
+                    background-color: rgba(0, 0, 0, 0.174);
+                    @media(min-width: 725px) {
+                        background-color: initial;
+                        color: darken($text-inverse, 15%);                
+                    }
+                }
+            }
+        }
+    }
+    &.is-open {
+        left: 0;
+    }
+}
+
+
+//Hamburger Menu
+
+.nav-toggle {
+    display: block;
+    padding: 1em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    cursor: pointer;
+
+    @media(min-width: 725px) {
+        display: none;
+    }
+
+    .hamburger, .hamburger::before, .hamburger::after {
+        content: '';
+        display: block;
+        width: 2em;
+        height: 3px;
+        background-color: $white;
+        transition: all ease-in-out 250ms;
+    }
+
+    .hamburger::before {
+        transform: translateY(-6px);
+    }
+
+    .hamburger::after {
+        transform: translateY(3px);
+    }
+
+    .hamburger.is-open {
+        transform: rotate(45deg);
+
+        &::after {
+            transform: rotate(-90deg) translateX(3px);
+        }
+
+        &::before {
+           opacity: 0;
+        }
+    }
+}
+

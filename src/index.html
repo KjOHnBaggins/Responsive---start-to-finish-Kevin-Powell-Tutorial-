@@ -24,7 +24,9 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-
+            <div class="nav-toggle">
+                <div class="hamburger"></div>
+            </div>
         </div>
     </header>
 
@@ -32,15 +34,15 @@
     <section class="hero">
         <div class="container grid">
             
-            <div class="hero-text col">
-                <h1 class="title-large"><span>Take your app to the</span>> next level</h1>
+            <div class="hero-text col col--2-3">
+                <h1 class="title-large"><span>Take your app to the</span> next level</h1>
                 <p class="text-intro">The perfect landing page for your app, whatever it might be. Lorem ipsum dolor sit amet.</p>
                 <a href="" class="btn btn--secondary">Learn More</a>
                 <a href="" class="btn btn--primary">Get the App</a>
             </div>
 
-            <div class="col">
-                <img src="assets/The One Ring.jpg" alt="The One Ring" class="hero-img">
+            <div class="col col--1-3">
+                <img src="assets/The One Ring.jpg" alt="The One Ring" class="hero-img lg-screen">
             </div>
 
         </div>
@@ -49,77 +51,80 @@
     <section class="sales-points">
         <div class="container grid">
             
-            <h1>Promote your app</h1>
+            <h1 class="col col--full">Promote your app</h1>
             
-            <div class="sales-point col">
+            <div class="sales-point col col--1-3">
                 <img src="assets/GreyScale Trees.jpg" alt="">
-                <h2></h2>
-                <p></p>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio cupiditate minus in a eos corrupti quo et accusamus necessitatibus odit mollitia, non reprehenderit saepe adipisci velit. Sit atque tempore alias.</p>
             </div>
             
-            <div class="sales-point col">
+            <div class="sales-point col col--1-3">
                 <img src="assets/Canyon Scape.jpg" alt="">
-                <h2></h2>
-                <p></p>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus voluptatibus consequuntur at quisquam doloribus ratione explicabo suscipit velit culpa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora?</p>
             </div>
            
-            <div class="sales-point col">
+            <div class="sales-point col col--1-3">
                 <img src="assets/Dead Marshes.jpg" alt="">
-                <h2></h2>
-                <p></p>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, obcaecati dolorum. Enim veniam eum libero! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat voluptatum nisi perferendis.</p>
             
             </div>
         </div>
     </section>
 
     <section class="promo">
-        <div class="grid">
-
             <div class="title-box">
                 <h1>This app is amazing</h1>
                 <p>It does everything you didn't know an app needed to do.</p>
             </div>
-
-            <div class="col">
+        <div class="grid">
+            <div class="col col--1-2 bg-primary">
                 <h1>Doing great things for you</h1>
                 <h2>Lorem ipsum dolor sit amet.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime esse iste dolores neque magni delectus ratione est culpa. Neque, vel.Nam consectetur suscipit deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, repudiandae.</p>
                 <a href="" class="btn btn--primary">Get the App</a>
             </div>
 
-            <div class="col img-box">
-                <img src="assets/Hill with lake.jpg" alt="">
+            <div class="col col--1-2 img-box lg-screen">
+                <!-- Background Image inserted in .img-box class instead of img tag in html -->
             </div>
 
         </div>
     </section>
 
     <section class="cta">
-        <p class="text-large">Lorem ipsum dolor sit amet consectetur.</p>
-        <h1 class="title-large">SHOWCASE THE GREATNESS today</h1>
-        <a href="" class="btn btn--primary">Get the app</a>
+        <div class="container container--cta">
+            <p class="text-large">Lorem ipsum dolor sit amet consectetur.</p>
+            <h1 class="title-large">SHOWCASE THE GREATNESS today</h1>
+            <a href="" class="btn btn--primary">Get the app</a>
+        </div>
     </section>
 
 
     <footer>
-        <div class="container"></div>
-            <p>Take your app to the next level</p>
+        <div class="container container--footer">
+            <p class="title-footer">Take your app to the next level</p>
             <ul class="unstyled-list social-links">
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Facebook</a></li>
+                <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+            </ul>
+            <ul class="unstyled-list nav-footer">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </div>
-
-        <ul class="unstyled-list nav-footer">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/69791def35.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 </html>

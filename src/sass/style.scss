@@ -1,12 +1,17 @@
-body {
-    color: rgb(247, 164, 39);
-}
 // 1. Config files and helpers
+@forward './abstract/index.scss';
 
 // 2. Vendor
+@forward './vendor/normalize';
 
 // 3. Base styles
+@forward './base/index.scss';
 
 // 4. Layout
+@forward './layout/index.scss';
 
 // 5. Components
+@forward './components/index.scss';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
